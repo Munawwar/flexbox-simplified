@@ -1,0 +1,27 @@
+/**
+ * Possible values for $crossAlignment are flex-start, center, flex-end and stretch
+ * 
+ * Possible values for $alignment are flex-start, center and flex-end
+ * - stretch isn't possible directly with $alignment.. instead specific child elements need
+ *   flex-grow: 1; CSS property manually applied.
+ */
+@mixin horizontal-children($crossAlignment: center, $alignment: center, $wrap: wrap) {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: $crossAlignment;
+    align-content: $crossAlignment;
+    
+    justify-content: $alignment;
+    
+    flex-wrap: $wrap;
+}
+@mixin vertical-children($crossAlignment: center, $alignment: center) {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: $crossAlignment;
+    align-content: $crossAlignment;
+    
+    justify-content: $alignment;
+}
