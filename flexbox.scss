@@ -9,9 +9,11 @@
     display: flex;
     flex-direction: row;
     
+    /* alignment over the vertical axis*/
     align-items: $crossAlignment;
     align-content: $crossAlignment;
     
+    /* alignment over the horizontal axis*/
     justify-content: $alignment;
     
     flex-wrap: $wrap;
@@ -20,8 +22,10 @@
     display: flex;
     flex-direction: column;
     
+    /* alignment over the horizontal axis*/
     align-items: $crossAlignment;
     align-content: $crossAlignment;
     
+    /* alignment over the vertical axis*/
     justify-content: $alignment;
 }
