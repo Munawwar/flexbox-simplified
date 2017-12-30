@@ -25,7 +25,7 @@ HTML
 ```
 
 SASS
-```
+```scss
 body {
   @include vertical-children(stretch);
 }
