@@ -1,0 +1,35 @@
+flex-version = flex
+support-for-ie = false
+vendor-prefixes = official
+
+/**
+ * Possible values for crossAlignment are flex-start, center, flex-end and stretch
+ *
+ * Possible values for alignment are flex-start, center and flex-end
+ * - stretch isn't possible directly with alignment.. instead specific child elements need
+ *   flex-grow: 1; CSS property manually applied
+ */
+horizontal-children(crossAlignment=center, alignment=center, wrapBehavior=wrap)
+  display flex
+  flex-direction row
+
+  /* alignment over the horizontal axis*/
+  justify-content alignment
+
+  /* alignment over the vertical axis*/
+  align-items crossAlignment
+  align-content crossAlignment
+
+  /*Wrap items to next line on main-axis*/
+  flex-wrap wrapBehavior
+
+vertical-children(crossAlignment=center, alignment=center)
+  display flex
+  flex-direction column
+
+  /* alignment over the vertical axis*/
+  justify-content alignment
+
+  /* alignment over the horizontal axis*/
+  align-items crossAlignment
+  align-content crossAlignment
