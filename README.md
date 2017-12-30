@@ -34,7 +34,7 @@ body {
   // which means "grow beyond content width (if space is available), but
   // don't allow shrinking below content width"
   @include horizontal-children(stretch, flex-start, nowrap);
-  overflow-x: scroll; /*not needed.. but being explicit*/
+  overflow-x: scroll; // not needed.. but being explicit
 }
 .box1, .box2, .box3 {
   flex: 1 0 auto;
