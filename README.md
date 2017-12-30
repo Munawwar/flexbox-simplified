@@ -31,7 +31,7 @@ body {
 }
 .parent {
   flex: 1 0 auto; // short hand for flex-grow: 1; flex-shrink: 0; flex-basis: auto;
-  // which means "allow growing beyond content width, but
+  // which means "grow beyond content width (if space is available), but
   // don't allow shrinking below content width"
   @include horizontal-children(stretch, flex-start, nowrap);
   overflow-x: scroll; /*not needed.. but being explicit*/
