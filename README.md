@@ -7,7 +7,7 @@ horizontal-children(verticalAlignment, justify, wrapBehavior);
 vertical-children(horizontalAlignment, justify);
 ```
 
-First parameter can't take 'stretch' as a value, so the 3rd thing you need to know is
+Second parameter can't take 'stretch' as a value, so the 3rd thing you need to know is
 use of flex-grow and flex-shrink.
 
 ## Example
