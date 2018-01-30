@@ -8,7 +8,7 @@ vertical-children(horizontalAlignment, justify);
 ```
 
 First parameter can't take 'stretch' as a value, so the 3rd thing you need to know is
-use of flex-grow (and at times flex-shrink and flex-basis).
+use of flex-grow and flex-shrink.
 
 ## Example
 Let's make 3 horizontally aligned boxes and make parent horizontally scrollable.
