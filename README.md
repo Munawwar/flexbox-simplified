@@ -1,6 +1,8 @@
 # flexbox-simplified
 Just two mixins, to flexbox like a pro!
 
+We used this a lot in the codebase for two large e-commerce websites in the UAE - nisnass.ae and ounass.ae
+
 ## Documentation
 ```
 horizontal-children(verticalAlignment, justify, wrapBehavior);
