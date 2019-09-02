@@ -9,8 +9,15 @@ horizontal-children(verticalAlignment, justify, wrapBehavior);
 vertical-children(horizontalAlignment, justify);
 ```
 
-Second parameter can't take 'stretch' as a value, so the 3rd thing you need to know is
-use of flex-grow and flex-shrink.
+`verticalAlignment` and `horizontalAlignment` can be one of the three values: flex-start, flex-end or center
+
+`justify` can be one of four values: flex-start, flex-end, center or stretch
+
+`wrapBehavior` defaults to `wrap`. You can override it with `nowrap`
+
+(Other CSS props like baseline, space-between, space-around and space-evenly hasn't been tested)
+
+In additon to this, you need to know how to use flex-grow, flex-shrink and flex-basis to make your layout (learn it from CSS docs elsewhere).
 
 ## Example
 Let's make 3 horizontally aligned boxes and make parent horizontally scrollable.
